@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<!--comentario- la etiqueta anterior q indica que es html 5-->
+<html lang="es">
+    <head> <!--etiquita de conf del navegado-->
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./css/estilo.css">
+        <!--
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Nunito=display=swap" rel="stylesheet">
+        -->
+        <title>CatFlix - Catalogo de Pelicula</title>
+        <!--icono q se ve en la la pagina-->
+        <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+    </head>
+    <body id="body">
+       <header>
+        <nav>
+            <a href="#">
+                 <img src="./assets/img/palomitas-de-maiz.png" alt="logo de CacFlix" id="logPM" loading="lazy">
+                 <span id="logo">CatFlix</span>
+             </a>
+             <ul>           
+                <li>
+                    <a href="#tendencias">Tendencia</a>
+                </li>
+                <li>
+                    <a href="./pages/registrarse.html" >Registrarse</a>
+                </li>
+                <li>
+                    <a href="./pages/inicioseccion.htm"  >Iniciar secion</a>
+                </li>
+             </ul>
+        </nav>
+       </header> 
+       <main>
+        <section class="primeraSeccion">
+            <h1>Peliculas y Series </h1>
+            <h2>Disfruta tu dia mirando lo que te gusta</h2>
+            <a href="./pages/registrarse.html" class="registrate">Registrate</a>
+            
+        </section>
+        <section class="segundaSeccion">
+            <h2>Que te gustaria ver?</h2>
+
+            <form>
+                <input class="btmtext" type="text" id="buscar" name="buscar" placeholder="Buscar..." >
+                <input class="btmbuscar" type="submit" value="Buscar" id="buscarppp">
+            </form>  
+            
+        </section>
+        <hr>
+        <section id="tendencias" class="contenedorTende">
+            <h3>Tendencias para ver</h3>
+            <div class="contenedorCard">
+                <div>
+                     <a href="./pages/detalle.htm">
+                        <img src="./assets/img/Barbie.jpg" alt="Barbie"  loading="lazy">
+                    </a>    
+                    <p hidden>Barbie</p>
+                </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                       <img src="./assets/img/DUNA.jpg" alt="Duna" loading="lazy">
+                    </a>
+                    <p hidden>DUNA</p>
+               </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                        <img src="./assets/img/Kungfupanda4.jpg" alt="Kung fu panda 4"  loading="lazy">
+                    </a>
+                    <p hidden>Kung fu panda 4</p>
+                </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                        <img src="./assets/img/JURASIC WORD DOMINION.jpg" alt="JURASIC WORD DOMINION"  loading="lazy">
+                    </a>
+                    <p hidden>JURASIC WORD DOMINION</p>
+                </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                      <img src="./assets/img/9 reinas.jpg" alt="Nueve reinas"  loading="lazy">
+                    </a>
+                    <p hidden>9 Reinas</p>
+                </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                        <img src="./assets/img/PATOS.jpg" alt="PATOS"  loading="lazy">
+                    </a>
+                    <p hidden>Nombre PATOS</p>
+                </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                        <img src="./assets/img/La sociedad de la nieve.jpg" alt="La sociedad de la nieve"  loading="lazy">
+                    </a>
+                    <p hidden>La sociedad de la nieve</p>
+                </div>
+                <div>
+                    <a href="./pages/detalle.htm">
+                        <img src="./assets/img/OPPENHAIMER.jpg" alt="OPPEN HAIMER"  loading="lazy">
+                    </a>
+                    <p hidden>OPPEN HAIMER</p>
+                </div> 
+                <div>
+                    <a href="./pages/detalle.htm">
+                        <img src="./assets/img/Pobres criaturas.jpg" alt="Pobres criaturas"  loading="lazy">
+                    </a>
+                    <p hidden>Pobres Criaturas</p>
+                </div>
+            </div>
+           <button class="btmbuscar">anterior</button>
+           <button class="btmbuscar" >siguiente</button>
+        </section>
+         <hr>   
+        <section class="contenedorTende">
+            <h3>Recomendadas</h3>
+            <div class="contenedorAclamada">
+                <div>
+                    <img src="./assets/img/Barbie.jpg" alt="Barbie"  loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/La sociedad de la nieve.jpg" alt="La sociedad de la nieve" loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/OPPENHAIMER.jpg" alt="OPPEN HAIMER"  loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/JURASIC WORD DOMINION.jpg" alt="JURASIC WORD DOMINION"  loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/9 reinas.jpg" alt="9 reinas"  loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/PATOS.jpg" alt="PATOS"  loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/Kungfupanda4.jpg" alt="Kung fu panda 4"  loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/Pobres criaturas.jpg" alt="Pobres Criaturas" loading="lazy">
+                </div>
+                <div>
+                    <img src="./assets/img/Duna.jpg" alt="Duna"  loading="lazy">
+                </div>
+            </div>
+        </section>
+       </main>
+       <footer> 
+         <nav>
+                <ul>
+                    <li><a href="">Terminos y Condiciones</a></li>
+                    <li><a href=""></a>Preguntas fecuentes</li>
+                    <li><a href="mailto:www.yyyyy.com.ar" >Correo </a></li>
+                    <li><Administrador href="">Administrador de peliculas</a></li>
+                </ul>
+          </nav>
+          <a href="#body" class="flechaA">
+               <img src="./assets/img/angulo-cuadrado-hacia-arriba.png" alt="flecha arriba" >
+           </a>  
+        </footer>
+    </body>
+</html>

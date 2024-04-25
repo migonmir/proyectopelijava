@@ -1,2 +1,0 @@
-# proyectopelijava
- proyectode pelicular

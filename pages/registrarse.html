@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrase CacFlix - Catalogo de Pelicula</title>
+    <!--icono q se ve en la la pagina-->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="../css/estilo.css">
+
+</head>
+<body id="body">
+    <header>
+        <nav>
+            <a href="../index.html">
+                 <img src="../assets/img/palomitas-de-maiz.png" alt="logo de CacFlix" id="logPM" loading="lazy">
+                 <span id="logo">CacFlix</span>
+             </a>
+             <ul>
+                <li>
+                    <a href="../index.html#tendencias">Tendencia</a>
+                </li>
+                <li>
+                    <a href="#">Registrarse</a>
+                </li>
+                <li>
+                    <a href="../pages/inicioseccion.htm">Iniciar secion</a>
+                </li>
+             </ul>
+        </nav>
+    </header> 
+    <main class="registaFondo">
+          <section id="msregistrase" class="registaSec">
+              <h1>REGISTRARSE</h1>
+              <form action="" method="post">
+                  <div>
+                    <input id="nombre" name="nombre" type="text" placeholder="Nombre" required>
+                  </div>
+                  <div>
+                    <input id="apellido" name="apellido" type="text" placeholder="Apellido" required>
+                  </div>
+                  <div>
+                    <input id="email" name="email" type="email" placeholder="Email" required>
+                  </div>
+                  <div>
+                    <input id="contraseña" name="contraseña" type="password" placeholder="Contraseña" required>
+                  </div>
+                  <div>
+                    <input id="fNacimiento" name="fNacimiento" type="date" placeholder="Fecha de Nacimiento (dd/mm/aaaa)" required>
+                  </div>
+                  <div>
+                    <select name="pais" id="pais">
+                        <option value="" selected>Pais</option>
+                        <option value="AR">Argentina</option>
+                        <option value="BO">Bolivia</option>
+                        <option value="BR">Brasil</option>
+                        <option value="PE">Peru</option>
+                        <option value="CH">Chile</option>
+                        <option value="UY">Uruguay</option>
+                        <option value="MX">Mexico</option>
+                        <option value="PY">Paraguay</option>
+                        <option value="CO">Colombia</option>
+                        <option value="EC">Ecuador</option>
+                        <option value="VE">Venezuela</option>
+                    </select>
+                  </div>
+                  <div class="ffcheck">
+                    <input class="chcheck" type="checkbox"  id="terminos" name="terminos">
+                    <label class="lbcheck" for="terminos">Acepto los terminos y condiciones</label>
+                  </div>
+                  <div class="frbotton">
+                    <input class="inpfondo" type="submit"  id="enviar" value="Registrarse">
+                    <input class="inpfondo" type="reset" id="borrar" value="Borrar Datos">
+                  </div>
+              </form>
+            </section>
+    </main>
+    <footer> 
+        <nav>
+            <ul>
+                <li><a href="">Terminos y Condiciones</a></li>
+                <li>Preguntas fecuentes</li>
+                <li><a href="mailto:www.yyyyy.com.ar">Correo </a></li>
+                <li><Administrador href="">Administrador de peliculas</a></li>
+            </ul>
+        </nav>
+        <a href="#body" class="flechaA">
+           <img src="../assets/img/angulo-cuadrado-hacia-arriba.png" alt="flecha arriba">
+       </a>  
+    </footer> 
+</body>
+</html>
