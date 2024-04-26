@@ -1,9 +1,9 @@
 /* import la family fond*/
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@font-face{
+/*@font-face{
     font-family: "Poppins-LightItalic", sans-serif;
     src: url(../assets/fonts/Poppins/Poppins-LightItalic.ttf); 
-}
+}*/
 /* universal*/
 *{
     margin: 0;
@@ -316,9 +316,10 @@ hr{
     flex-direction: row ;
     justify-content: space-between;
     align-items: center; 
-    gap: 20px; 
+    gap: 10px; 
     div{
             margin-top: 10px;
+            margin-left: 5%;
             backdrop-filter: bur(8px);
             padding: 10px;    
         
@@ -332,7 +333,7 @@ hr{
         img{
             width: 300px;
             height: 400px;
-            margin: 20px;
+            margin: 10%;
             object-fit: cover;
             border-radius: 5%;
         } 
@@ -341,10 +342,12 @@ hr{
 }  
 @media screen and (max-width: 992px){
     .kungfupanda{
+        height: 100%;
         flex-direction: column; 
+        justify-content: center;
         div{
             h1{
-                font-size: 1.5rem;  
+                font-size: 1.2rem;  
             }
             h2{
                 font-size: 1rem;
@@ -352,7 +355,7 @@ hr{
             img{
                 width: 200px;
                 height: 300px;
-                margin: 10px;
+                margin: 5%;
             }   
         }  
     }
@@ -581,15 +584,21 @@ hr{
             }
      overflow: auto;
 }
-/*@media screen and (max-width: 768px){
+@media screen and (max-width: 768px){
     .registaSec{
-            width: 60%;
+            width: 90%;
             height: initial;
+            margin-left: 20%;
             h1{
-                font-size: 1.5rem;
-            }  
+                font-size: 1rem;
+            } 
+            form{
+                input{
+                  font-size: 0.7rem;
+                }
+            } 
         }  
-}*/
+}
 @media screen and (max-width: 992px){
     .registaSec{
             width: 60%;
@@ -617,6 +626,11 @@ hr{
 .lbcheck{
         font-size: 1rem;
         margin-left: 5px;
+    }
+@media screen and (max-width: 768px){
+        .lbcheck{    
+            font-size: 0.7rem;
+        }
     }
 .iniciosSec{
         display: flex;
