@@ -31,12 +31,14 @@
        <main class="registaFondo">
             <section class="iniciosSec">
                  <h1>Iniciar Seccion</h1>
-                 <form action="" method="post">
+                 <form action="" method="post" id="formInicioSec">
                     <div>
-                        <input type="email" id="email" name="email" placeholder="Email" required>
+                        <input type="email" id="email" name="email" placeholder="Email" class="control">
+                        <div id="emailError" class="errormsg"></div>
                     </div>
                     <div>
-                        <input type="password" id="contraseña"name="contraseña" placeholder="Contraseña" required>
+                        <input type="password" id="ipassword" name="ipassword" placeholder="Contraseña" class="control">
+                        <div id="passwordError" class="errormsg"></div>
                     </div>
                     <div class="subbotton">
                         <input type="submit" id="registra" value="Iniciar Seccion">
@@ -59,6 +61,7 @@
            <img src="../assets/img/angulo-cuadrado-hacia-arriba.png" alt="flecha arriba">
        </a>  
     <hr>  
-       </footer>  
+       </footer> 
+       <script src="../js/validaIniSec.js" ></script>
 </body>
 </html>

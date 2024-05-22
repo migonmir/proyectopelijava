@@ -180,7 +180,7 @@ hr{
     margin-top: 10px;
 }
 .primeraSeccion{
-     background: linear-gradient(to bottom,#00000082,#00000082),url(../assets/img/LOGO_1.png);
+    background: linear-gradient(to bottom,#00000082,#00000082),url(../assets/img/logo_1.png);
     background-position: bottom;
     background-repeat: no-repeat;
     background-size: auto;
@@ -305,7 +305,7 @@ hr{
         border-radius: 20px;
 }
 .kungfupanda{
-    background: linear-gradient(to bottom,#ffffff59,#ffffff59),url(../assets/img/Kungfupanda4.jpg);
+    background: linear-gradient(to bottom,#ffffff59,#ffffff59),url(../assets/img/kungfupanda4.jpg);
     background-size: cover ;
     background-position:center; 
     background-repeat: no-repeat;
@@ -438,6 +438,14 @@ hr{
                right: 0.5rem;
             }  
 }
+.divEncApi{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+        button:hover {
+            background-color: var(--colorfonbot);
+        }   
+}
 .contenedorTende{
     width: 80%;
     margin: 0 auto;
@@ -455,6 +463,7 @@ hr{
                width: 70%;
             }  
 }
+
 .contenedorCard{
     display: flex; 
     justify-content: space-evenly; 
@@ -479,10 +488,10 @@ hr{
 }
 @media screen and (max-width: 768px){
     .contenedorCard{
-        div{
+    .div{
             width: 300px;
              height: 400px;
-        }
+    }
    }  
 }
 .contenedorAclamada{
@@ -504,7 +513,7 @@ hr{
         /*box-shadow: 10px 10px 47px -6px rgba(255, 255, 255, 0.42);*/
        img{
             width: 100%;
-            height: 100%;
+            height: 90%;
             object-fit: cover;
             border-radius: 5%;
         }
@@ -512,17 +521,31 @@ hr{
 }
 @media screen and (max-width: 768px){
     .contenedorAclamada{
-               width: 90%;
+             column-gap: 15px; 
+               width: 100%;
                div{
-                    width: 220px;
-                    height: 300px;
-                  
+                    width: 210px;
+                    height: 300px;          
                }
             }  
 }
+.card-body{
+    padding: 5px;
+    width: 250px;
+}
+@media screen and (max-width: 768px) {
+    .card-body{
+        width: 210px;
+    }
+    
+}
+.card-title{
+    padding: 5px; 
+}
+
 .registaFondo{
-    /* background-image: url(../assets/img/FONDO4.jpg); */
-        background: linear-gradient(to bottom,#ffffff82,#ffffff82),url(../assets/img/FONDO4.jpg);
+    /* background-image: url(../assets/img/fondo4.jpg); */
+        background: linear-gradient(to bottom,#ffffff82,#ffffff82),url(../assets/img/fondo4.jpg);
        background-position: bottom;
        background-repeat: no-repeat;
        background-size: cover;
@@ -547,17 +570,17 @@ hr{
                text-align: center; 
            }
            form{
-               width: 100%;
-                padding:30px;
+               width: 80%;
+                padding: 20px;
             input:not(.chcheck),select{
                  /*input:not( submit),select{  */  
                     width: 100%;
                     margin-bottom: 10px;
-                    height: 30px;
+                    height: 25px;
                     padding: 0px 10px;
                     font-size: 1rem;
                     border-radius: 20px;
-                    border: 2px solid var(--fondfoot);
+                    border: 1px solid var(--fondfoot);
                     background-color: var(--fondBody);
                     outline: none;
                     color:var(--fuentecolor);
@@ -609,10 +632,10 @@ hr{
         }  
 }
 .ffcheck{   
-    height: 30px;
+    height: 25px;
     width: 100%;
     border-radius: 20px;
-    border: 2px solid var(--fondfoot);
+    border: 1px solid var(--fondfoot);
     border-radius: 20px;      
     margin-bottom: 30px;
     padding: 0px 10px;
@@ -690,5 +713,24 @@ hr{
             }  
         }  
 }
+.errormsg {
+    color: rgb(226, 168, 168);
+    font-size: 12px;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+@media screen and (max-width: 992px){
+    .errormsg{
+        font-size: 9px;
+        margin-top: 2px;
+        margin-bottom: 2px;  
+        }  
+}
+/*.error{
+    border: 1px solid red;
+}
+.sinError{
+    border: 1px solid green;
+}*/
 
 
