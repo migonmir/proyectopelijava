@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrase CacFlix - Catalogo de Pelicula</title>
+    <!--icono q se ve en la la pagina-->
+    <link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+   
+    <link rel="stylesheet" href="../css/estilo.css">
+    <!--
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/booestilos.css">
+-->
+
+</head>
+<body id="body">
+  <!--
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-fondtit">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            <img src="../assets/img/palomitas-de-maiz.png" alt="logo de CacFlix" id="logPM" loading="lazy">
+           <span id="logo">PelFlix</span>
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-100 justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active fs-6" aria-current="page"  href="../index#tendencias.html">Tendencias</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-6"  href="./registrarse.html">Registrarse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active fs-6" href="./inicioseccion.htm">Inicio Seccion</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+</header>
+
+-->
+    <header>
+        <nav>
+            <a href="../index.html">
+                 <img src="../assets/img/palomitas-de-maiz.png" alt="logo de CacFlix" id="logPM" loading="lazy">
+                 <span id="logo">PelFlix</span>
+             </a>
+             <ul>
+                <li>
+                    <a href="../index.html#tendencias">Tendencia</a>
+                </li>
+                <li>
+                    <a href="../pages/registrarse.html">Registrarse</a>
+                </li>
+                <li>
+                    <a href="../pages/inicioseccion.htm">Iniciar secion</a>
+                </li>
+             </ul>
+        </nav>
+    </header> 
+  
+    <main class="gestionFondo">
+          <section class="iniciosGestion">
+            <!--
+             id="msregistrase" class="registaSec"> 
+            --> 
+              <h1>Gestión de peliculas</h1>
+              <h6>En esta sección so podra llevar a cabo la gestin de las peliculas del portal</h6>
+              <form action="" method="post" enctype="multipart/form-data" id="formGestion" >
+                  <div class="titulosform">
+                    <div class="locupa1">
+                      <div>
+                        <label for="titulo">Titulo                         </label> 
+                      </div>
+                      <input id="titulo" name="titulo" type="text"  class="control">
+                      <div id="tituloError" class="errormsg"></div>
+                    </div>
+                    <!--
+                    <div class="locupa2">
+                      <div>
+                        <label for="fecha_lanza" >Fecha de lanzamiento</label> 
+                      </div>
+                      <input id="fecha_lanza" name="fecha_lanza" type="date"  class="control">
+                     <div id="fech_lanza" class="errormsg"></div>
+                    </div> 
+                  -->
+                  
+                    <div class="locupa2">
+                      <div>
+                        <label for="genero">Genero</label>
+                      </div>
+                      <select name="genero" id="genero" class="control">
+                        <option value="" selected>Genero</option>
+                        <option value="Drama">Drama</option>
+                        <option value="Comedia">Domedia</option>
+                        <option value="C. Ficcion">Ciencia Ficción</option>
+                        <option value="Comica">Comica</option>
+                        <option value="Susupenso">Suspenso</option>
+                        <option value="Infantil">Infantil</option>
+                        <option value="BELICA">Belica</option>
+                        <option value="Terror">Terror</option>
+                        <option value="Romantica">Romantica</option>
+                        <option value="Aventura">Aventura</option>
+                      </select>
+                      <div id="generoError" class="errormsg"></div>
+                    </div>
+                    <div class="locupa3">
+                      <div>
+                        <label for="duracion">Duración</label>
+                      </div>
+                      <input id="duracion" name="duracion" type="text" class="control" placeholder=" 2h 30m">
+                      <div id="duracionError" class="errormsg"></div>
+                    </div>
+                  
+                  </div>
+                  
+                  <div class="titulosform">
+                    <div class="locupa1">
+                      <div>
+                        <label for="director" >Director</label>
+                      </div>
+                      <input id="director" name="directo" type="text"  class="control">
+                      <div id="directorError" class="errormsg"></div>
+                    </div>
+                    <div class="locupa4">
+                      <div>
+                        <label for="reparto">Reparto</label>
+                      </div>
+                      <input id="reparto" name="reparto" type="text" class="control" >
+                      <div id="repartoError" class="errormsg"></div>
+                    </div>
+                  </div>
+                  <div class="locupa5">
+                    <div>
+                      <label for="sinopsis">Sinopsis</label> 
+                    </div>
+                    <textarea cols="59" rows="4" id="sinopsis" name="sinopsis"></textarea>
+                    <div id="sinopsisError" class="errormsg"></div>
+                  </div>
+              
+                  <div class="locupa1">
+                    <div>
+                      <label for="imagen">Imagen</label>
+                    </div>
+                    <input type="text" id="imagen" name="imagen" class="control">
+                    <div id="imagenError" class="errormsg"></div>
+                  </div>
+               
+                  <div class="gsbotton" >
+                    <input class="inpfondo" type="submit"  id="agregar" value="Agregar pelicula">
+                    <input class="inpfondo" type="reset" id="borrar" value="Limpiar">
+                  </div>
+              </form>
+            </section>
+            <hr>
+            <section class="iniciotabla">
+              <h1>Listado de Peliculas</h1>
+              <h6>Para ver todos los datos de las peliculas, elija una y presiones modificar</h6>
+              <table>
+                <thead>
+                  <tr>
+                    <th scope="col">#id</th>
+                    <th scope="col">Titulo</th>
+                    <th scope="col">Duracion</th>
+                    <th scope="col">Genero</th>
+                    <th scope="col">Imagen</th>
+                    <th scope="col">Accion</th>
+                  </tr>
+                </thead>
+                <tbody id="bodyTabla">
+                
+                
+                </tbody>
+              </table>  
+            </section>
+    </main>
+   <!-- <footer class="fotter"> -->
+   <footer>
+        <a href="#body" class="flechaA">
+           <img src="../assets/img/angulo-cuadrado-hacia-arriba.png" alt="flecha arriba">
+       </a>  
+    </footer> 
+    <!--
+    <script src="../js/bootstrap.bundle.min.js"></script>-->
+    <script src="../js/validaAdminist.js" ></script>
+    <script src="../js/postAdminist.js"></script>
+    <script src="../js/getAdminist.js"></script>
+
+</body>
+</html>
