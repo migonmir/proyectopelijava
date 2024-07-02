@@ -75,7 +75,7 @@ body{
          height: initial;
     }
 }
-footer{
+.footer{
     font-family: "Poppins-LightItalic", sans-serif;
     background-color: var(--fondfoot);
     height: 10vh;
@@ -107,7 +107,7 @@ footer{
      overflow: auto;
 }
 @media screen and (max-width: 768px){
-    footer{
+    .footer{
          height: initial;
          ul{
             flex-direction: column;
@@ -732,5 +732,173 @@ hr{
 .sinError{
     border: 1px solid green;
 }*/
+.gestionfondo{
+    background-color: var(--fondBody);
+}
+.footer1{
+    background-color: var(--fondBody);
+    height: 1vh;
+}
+.iniciotabla{
+    height: 85vh;
+    width: 90%;
+    margin-left: 10px;
+    h1{
+        margin-top: 15px;
+        margin-bottom: 10px;
+       font-style: italic;
+       text-transform: uppercase;
+       font-size: 1.5rem; 
+       text-align: center; 
+   }
+   h6{ 
+       text-align: center; 
+       margin-bottom: 10px;
+   } 
+    table{
+        width: 90%;
+        margin-left: 10px;
+        color: var(--fuentecolor);
+        border-collapse: collapse;
+        tr{
+            border-bottom: 1px solid var(--fondfoot); 
+        }
+        th {
+            height: 40px;
+            padding-top: 12px;
+            padding-bottom: 12px;
+            text-align: left;
+            color: var(--fuentecolor);
+         }
+            tr:hover {
+                background-color: var(--colorfonbot);
+            }   
+    }
+}
+ 
+@media screen and (max-width: 992px){
+    .iniciotabla{
+            width: 100%;
+            h1{
+                font-size: 1.3rem;
+            }
+        }
+    }
+.iniciosGestion{
+    /*
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    height: 90vh;
+    width: 80%;
+    margin-left: 10px;
+        h1{
+             margin-top: 15px;
+             margin-bottom: 10px;
+            font-style: italic;
+            text-transform: uppercase;
+            font-size: 1.5rem; 
+            text-align: center; 
+        }
+        h6{ 
+            text-align: center; 
+        }  
+        form{
+            width: 100%; 
+            padding: 30px;
+            input, select {
+                width: 100%;
+                margin-bottom: 8px;
+                height: 25px;
+                padding: 0px 10px;
+                font-size: 1rem;
+                /*border-radius: 20px;
+                border: 2px solid var(--fondfoot);
+                background-color: var(--fondBody);*/
+                outline: none;
+                color:var(--fondBody);
 
+            }
+
+            transition: background-color 2s ease;
+            .gsbotton{
+                width: 50%;
+                margin-top: 10px;
+                margin-left: 20%;
+                padding: 0px 10px;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                column-gap: 10px;
+                     input{
+                        height: 40px;
+                        padding: 0px 10px;
+                        border-radius: 20px;
+                        border: 2px solid var(--fondfoot);
+                        background-color: var(--fondfoot);  
+                        }
+                      input:hover {
+                             background-color: var(--colorfonbot);
+                        }
+              }    
+             }
+  overflow: auto;
+}
+@media screen and (max-width: 992px){
+.iniciosGestion{
+        width: 100%;
+        h1{
+            font-size: 1.3rem;
+        } 
+        form{
+            /*padding: 10px;*/
+            height: 20px;
+            input{
+                text-align: start;
+                font-size: 0.9rem;  
+                height: 20px;
+                
+            }
+        }
+    }  
+}
+.titulosform{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start ;
+    align-items: center;  
+    column-gap: 10px;   
+}
+@media screen and (max-width: 992px){
+    .titulosform{
+        display: flex;
+        flex-direction: column; 
+        justify-content: flex-start;
+        column-gap: 2px; 
+
+        }  
+}
+
+.locupa1{
+    width: 43%;
+}
+.locupa2{
+    width: 30%;
+}
+.locupa3{
+    width: 20%;
+}
+.locupa4{
+    width: 55%;
+}
+.locupa5{
+    width: 100%;
+}
+/*@media screen  and( max-width: 768){
+   .locupa5{
+    width: 70%;
+   } 
+}*/
 
